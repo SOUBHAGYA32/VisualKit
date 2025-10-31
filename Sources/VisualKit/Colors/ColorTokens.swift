@@ -1,0 +1,291 @@
+//
+//  Colors.swift
+//  VisualKit
+//
+//  Created by Soubhagya on 30/10/25.
+//
+
+import SwiftUI
+
+// MARK: - Color Tokens
+public struct ColorTokens: Sendable {
+
+  // MARK: - Red Colors
+  public let red50 = Color(red: 0.996, green: 0.949, blue: 0.949)
+  public let red100 = Color(red: 0.996, green: 0.871, blue: 0.871)
+  public let red200 = Color(red: 0.996, green: 0.733, blue: 0.733)
+  public let red300 = Color(red: 0.988, green: 0.565, blue: 0.565)
+  public let red400 = Color(red: 0.973, green: 0.396, blue: 0.396)
+  public let red500 = Color(red: 0.937, green: 0.267, blue: 0.267)
+  public let red600 = Color(red: 0.863, green: 0.196, blue: 0.196)
+  public let red700 = Color(red: 0.725, green: 0.157, blue: 0.157)
+  public let red800 = Color(red: 0.600, green: 0.133, blue: 0.133)
+  public let red900 = Color(red: 0.498, green: 0.114, blue: 0.114)
+  public let red950 = Color(red: 0.271, green: 0.063, blue: 0.063)
+
+  // MARK: - Orange Colors
+  public let orange50 = Color(red: 1.000, green: 0.969, blue: 0.933)
+  public let orange100 = Color(red: 1.000, green: 0.929, blue: 0.831)
+  public let orange200 = Color(red: 0.996, green: 0.843, blue: 0.667)
+  public let orange300 = Color(red: 0.992, green: 0.729, blue: 0.475)
+  public let orange400 = Color(red: 0.984, green: 0.600, blue: 0.318)
+  public let orange500 = Color(red: 0.976, green: 0.451, blue: 0.196)
+  public let orange600 = Color(red: 0.918, green: 0.341, blue: 0.133)
+  public let orange700 = Color(red: 0.761, green: 0.259, blue: 0.098)
+  public let orange800 = Color(red: 0.616, green: 0.216, blue: 0.086)
+  public let orange900 = Color(red: 0.494, green: 0.180, blue: 0.075)
+  public let orange950 = Color(red: 0.267, green: 0.090, blue: 0.035)
+
+  // MARK: - Amber Colors
+  public let amber50 = Color(red: 1.000, green: 0.984, blue: 0.925)
+  public let amber100 = Color(red: 0.996, green: 0.957, blue: 0.808)
+  public let amber200 = Color(red: 0.992, green: 0.902, blue: 0.612)
+  public let amber300 = Color(red: 0.988, green: 0.835, blue: 0.384)
+  public let amber400 = Color(red: 0.984, green: 0.753, blue: 0.212)
+  public let amber500 = Color(red: 0.961, green: 0.671, blue: 0.118)
+  public let amber600 = Color(red: 0.851, green: 0.537, blue: 0.078)
+  public let amber700 = Color(red: 0.706, green: 0.400, blue: 0.063)
+  public let amber800 = Color(red: 0.580, green: 0.322, blue: 0.067)
+  public let amber900 = Color(red: 0.478, green: 0.263, blue: 0.067)
+  public let amber950 = Color(red: 0.275, green: 0.137, blue: 0.024)
+
+  // MARK: - Yellow Colors
+  public let yellow50 = Color(red: 0.996, green: 0.988, blue: 0.922)
+  public let yellow100 = Color(red: 0.996, green: 0.969, blue: 0.804)
+  public let yellow200 = Color(red: 0.992, green: 0.929, blue: 0.608)
+  public let yellow300 = Color(red: 0.988, green: 0.875, blue: 0.376)
+  public let yellow400 = Color(red: 0.980, green: 0.808, blue: 0.192)
+  public let yellow500 = Color(red: 0.918, green: 0.710, blue: 0.098)
+  public let yellow600 = Color(red: 0.788, green: 0.561, blue: 0.063)
+  public let yellow700 = Color(red: 0.631, green: 0.420, blue: 0.055)
+  public let yellow800 = Color(red: 0.522, green: 0.341, blue: 0.067)
+  public let yellow900 = Color(red: 0.439, green: 0.286, blue: 0.067)
+  public let yellow950 = Color(red: 0.255, green: 0.157, blue: 0.024)
+
+  // MARK: - Lime Colors
+  public let lime50 = Color(red: 0.969, green: 0.996, blue: 0.922)
+  public let lime100 = Color(red: 0.925, green: 0.988, blue: 0.883)
+  public let lime200 = Color(red: 0.851, green: 0.976, blue: 0.631)
+  public let lime300 = Color(red: 0.741, green: 0.957, blue: 0.420)
+  public let lime400 = Color(red: 0.631, green: 0.918, blue: 0.247)
+  public let lime500 = Color(red: 0.522, green: 0.831, blue: 0.137)
+  public let lime600 = Color(red: 0.396, green: 0.663, blue: 0.086)
+  public let lime700 = Color(red: 0.298, green: 0.502, blue: 0.075)
+  public let lime800 = Color(red: 0.247, green: 0.404, blue: 0.075)
+  public let lime900 = Color(red: 0.212, green: 0.345, blue: 0.075)
+  public let lime950 = Color(red: 0.102, green: 0.192, blue: 0.027)
+
+  // MARK: - Green Colors
+  public let green50 = Color(red: 0.941, green: 0.992, blue: 0.953)
+  public let green100 = Color(red: 0.863, green: 0.984, blue: 0.886)
+  public let green200 = Color(red: 0.733, green: 0.969, blue: 0.776)
+  public let green300 = Color(red: 0.565, green: 0.941, blue: 0.627)
+  public let green400 = Color(red: 0.376, green: 0.890, blue: 0.455)
+  public let green500 = Color(red: 0.220, green: 0.804, blue: 0.310)
+  public let green600 = Color(red: 0.133, green: 0.698, blue: 0.235)
+  public let green700 = Color(red: 0.106, green: 0.553, blue: 0.196)
+  public let green800 = Color(red: 0.102, green: 0.439, blue: 0.173)
+  public let green900 = Color(red: 0.086, green: 0.365, blue: 0.153)
+  public let green950 = Color(red: 0.024, green: 0.204, blue: 0.082)
+
+  // MARK: - Emerald Colors
+  public let emerald50 = Color(red: 0.922, green: 0.992, blue: 0.965)
+  public let emerald100 = Color(red: 0.820, green: 0.984, blue: 0.918)
+  public let emerald200 = Color(red: 0.651, green: 0.965, blue: 0.851)
+  public let emerald300 = Color(red: 0.431, green: 0.941, blue: 0.761)
+  public let emerald400 = Color(red: 0.263, green: 0.890, blue: 0.651)
+  public let emerald500 = Color(red: 0.157, green: 0.804, blue: 0.522)
+  public let emerald600 = Color(red: 0.118, green: 0.663, blue: 0.420)
+  public let emerald700 = Color(red: 0.110, green: 0.525, blue: 0.337)
+  public let emerald800 = Color(red: 0.106, green: 0.420, blue: 0.275)
+  public let emerald900 = Color(red: 0.094, green: 0.345, blue: 0.231)
+  public let emerald950 = Color(red: 0.024, green: 0.196, blue: 0.133)
+
+  // MARK: - Teal Colors
+  public let teal50 = Color(red: 0.941, green: 0.996, blue: 0.992)
+  public let teal100 = Color(red: 0.880, green: 0.988, blue: 0.980)
+  public let teal200 = Color(red: 0.733, green: 0.976, blue: 0.957)
+  public let teal300 = Color(red: 0.600, green: 0.949, blue: 0.918)
+  public let teal400 = Color(red: 0.376, green: 0.886, blue: 0.839)
+  public let teal500 = Color(red: 0.078, green: 0.788, blue: 0.722)
+  public let teal600 = Color(red: 0.051, green: 0.647, blue: 0.596)
+  public let teal700 = Color(red: 0.059, green: 0.518, blue: 0.482)
+  public let teal800 = Color(red: 0.067, green: 0.416, blue: 0.392)
+  public let teal900 = Color(red: 0.075, green: 0.345, blue: 0.329)
+  public let teal950 = Color(red: 0.024, green: 0.208, blue: 0.200)
+
+  // MARK: - Cyan Colors
+  public let cyan50 = Color(red: 0.925, green: 0.996, blue: 1.000)
+  public let cyan100 = Color(red: 0.807, green: 0.988, blue: 0.996)
+  public let cyan200 = Color(red: 0.661, green: 0.976, blue: 0.988)
+  public let cyan300 = Color(red: 0.400, green: 0.949, blue: 0.976)
+  public let cyan400 = Color(red: 0.137, green: 0.890, blue: 0.949)
+  public let cyan500 = Color(red: 0.031, green: 0.804, blue: 0.890)
+  public let cyan600 = Color(red: 0.031, green: 0.682, blue: 0.788)
+  public let cyan700 = Color(red: 0.055, green: 0.545, blue: 0.65)
+  public let cyan800 = Color(red: 0.086, green: 0.439, blue: 0.525)
+  public let cyan900 = Color(red: 0.086, green: 0.365, blue: 0.439)
+  public let cyan950 = Color(red: 0.024, green: 0.231, blue: 0.294)
+
+  // MARK: - Sky Colors
+  public let sky50 = Color(red: 0.941, green: 0.976, blue: 1.000)
+  public let sky100 = Color(red: 0.878, green: 0.949, blue: 0.996)
+  public let sky200 = Color(red: 0.729, green: 0.890, blue: 0.988)
+  public let sky300 = Color(red: 0.490, green: 0.804, blue: 0.976)
+  public let sky400 = Color(red: 0.216, green: 0.698, blue: 0.949)
+  public let sky500 = Color(red: 0.055, green: 0.592, blue: 0.918)
+  public let sky600 = Color(red: 0.008, green: 0.471, blue: 0.839)
+  public let sky700 = Color(red: 0.012, green: 0.376, blue: 0.722)
+  public let sky800 = Color(red: 0.027, green: 0.318, blue: 0.608)
+  public let sky900 = Color(red: 0.047, green: 0.263, blue: 0.506)
+  public let sky950 = Color(red: 0.031, green: 0.173, blue: 0.337)
+
+  // MARK: - Blue Colors
+  public let blue50 = Color(red: 0.937, green: 0.953, blue: 1.000)
+  public let blue100 = Color(red: 0.859, green: 0.898, blue: 0.996)
+  public let blue200 = Color(red: 0.753, green: 0.816, blue: 0.988)
+  public let blue300 = Color(red: 0.576, green: 0.694, blue: 0.976)
+  public let blue400 = Color(red: 0.376, green: 0.549, blue: 0.949)
+  public let blue500 = Color(red: 0.235, green: 0.427, blue: 0.918)
+  public let blue600 = Color(red: 0.145, green: 0.325, blue: 0.867)
+  public let blue700 = Color(red: 0.118, green: 0.259, blue: 0.784)
+  public let blue800 = Color(red: 0.118, green: 0.216, blue: 0.635)
+  public let blue900 = Color(red: 0.118, green: 0.192, blue: 0.506)
+  public let blue950 = Color(red: 0.086, green: 0.125, blue: 0.310)
+
+  // MARK: - Indigo Colors
+  public let indigo50 = Color(red: 0.933, green: 0.949, blue: 1.000)
+  public let indigo100 = Color(red: 0.878, green: 0.906, blue: 0.996)
+  public let indigo200 = Color(red: 0.788, green: 0.824, blue: 0.992)
+  public let indigo300 = Color(red: 0.647, green: 0.698, blue: 0.984)
+  public let indigo400 = Color(red: 0.506, green: 0.549, blue: 0.969)
+  public let indigo500 = Color(red: 0.380, green: 0.427, blue: 0.945)
+  public let indigo600 = Color(red: 0.310, green: 0.325, blue: 0.898)
+  public let indigo700 = Color(red: 0.263, green: 0.271, blue: 0.820)
+  public let indigo800 = Color(red: 0.216, green: 0.220, blue: 0.667)
+  public let indigo900 = Color(red: 0.188, green: 0.188, blue: 0.545)
+  public let indigo950 = Color(red: 0.118, green: 0.114, blue: 0.337)
+
+  // MARK: - Violet Colors
+  public let violet50 = Color(red: 0.969, green: 0.949, blue: 1.000)
+  public let violet100 = Color(red: 0.929, green: 0.906, blue: 0.996)
+  public let violet200 = Color(red: 0.875, green: 0.824, blue: 0.992)
+  public let violet300 = Color(red: 0.788, green: 0.698, blue: 0.984)
+  public let violet400 = Color(red: 0.675, green: 0.549, blue: 0.969)
+  public let violet500 = Color(red: 0.580, green: 0.427, blue: 0.945)
+  public let violet600 = Color(red: 0.498, green: 0.325, blue: 0.898)
+  public let violet700 = Color(red: 0.427, green: 0.271, blue: 0.820)
+  public let violet800 = Color(red: 0.357, green: 0.220, blue: 0.667)
+  public let violet900 = Color(red: 0.294, green: 0.188, blue: 0.545)
+  public let violet950 = Color(red: 0.196, green: 0.114, blue: 0.337)
+
+  // MARK: - Purple Colors
+  public let purple50 = Color(red: 0.980, green: 0.949, blue: 1.000)
+  public let purple100 = Color(red: 0.953, green: 0.906, blue: 0.996)
+  public let purple200 = Color(red: 0.906, green: 0.824, blue: 0.992)
+  public let purple300 = Color(red: 0.843, green: 0.698, blue: 0.984)
+  public let purple400 = Color(red: 0.757, green: 0.549, blue: 0.969)
+  public let purple500 = Color(red: 0.675, green: 0.427, blue: 0.945)
+  public let purple600 = Color(red: 0.584, green: 0.325, blue: 0.898)
+  public let purple700 = Color(red: 0.494, green: 0.271, blue: 0.820)
+  public let purple800 = Color(red: 0.412, green: 0.220, blue: 0.667)
+  public let purple900 = Color(red: 0.341, green: 0.188, blue: 0.545)
+  public let purple950 = Color(red: 0.227, green: 0.114, blue: 0.337)
+
+  // MARK: - Fuchsia Colors
+  public let fuchsia50 = Color(red: 0.992, green: 0.949, blue: 1.000)
+  public let fuchsia100 = Color(red: 0.984, green: 0.906, blue: 0.996)
+  public let fuchsia200 = Color(red: 0.969, green: 0.824, blue: 0.992)
+  public let fuchsia300 = Color(red: 0.941, green: 0.698, blue: 0.984)
+  public let fuchsia400 = Color(red: 0.906, green: 0.549, blue: 0.969)
+  public let fuchsia500 = Color(red: 0.851, green: 0.427, blue: 0.945)
+  public let fuchsia600 = Color(red: 0.784, green: 0.325, blue: 0.898)
+  public let fuchsia700 = Color(red: 0.682, green: 0.271, blue: 0.820)
+  public let fuchsia800 = Color(red: 0.565, green: 0.220, blue: 0.667)
+  public let fuchsia900 = Color(red: 0.471, green: 0.188, blue: 0.545)
+  public let fuchsia950 = Color(red: 0.294, green: 0.114, blue: 0.337)
+
+  // MARK: - Pink Colors
+  public let pink50 = Color(red: 0.992, green: 0.953, blue: 0.976)
+  public let pink100 = Color(red: 0.988, green: 0.894, blue: 0.941)
+  public let pink200 = Color(red: 0.984, green: 0.804, blue: 0.890)
+  public let pink300 = Color(red: 0.976, green: 0.663, blue: 0.812)
+  public let pink400 = Color(red: 0.957, green: 0.486, blue: 0.706)
+  public let pink500 = Color(red: 0.925, green: 0.322, blue: 0.592)
+  public let pink600 = Color(red: 0.859, green: 0.196, blue: 0.471)
+  public let pink700 = Color(red: 0.741, green: 0.133, blue: 0.376)
+  public let pink800 = Color(red: 0.616, green: 0.118, blue: 0.314)
+  public let pink900 = Color(red: 0.518, green: 0.110, blue: 0.275)
+  public let pink950 = Color(red: 0.314, green: 0.043, blue: 0.165)
+
+  // MARK: - Rose Colors
+  public let rose50 = Color(red: 1.000, green: 0.953, blue: 0.957)
+  public let rose100 = Color(red: 1.000, green: 0.894, blue: 0.914)
+  public let rose200 = Color(red: 0.996, green: 0.804, blue: 0.835)
+  public let rose300 = Color(red: 0.992, green: 0.663, blue: 0.714)
+  public let rose400 = Color(red: 0.984, green: 0.486, blue: 0.565)
+  public let rose500 = Color(red: 0.969, green: 0.322, blue: 0.431)
+  public let rose600 = Color(red: 0.910, green: 0.196, blue: 0.322)
+  public let rose700 = Color(red: 0.769, green: 0.133, blue: 0.251)
+  public let rose800 = Color(red: 0.639, green: 0.118, blue: 0.220)
+  public let rose900 = Color(red: 0.533, green: 0.110, blue: 0.200)
+  public let rose950 = Color(red: 0.290, green: 0.043, blue: 0.106)
+
+  // MARK: - Slate Colors
+  public let slate50 = Color(red: 0.973, green: 0.980, blue: 0.988)
+  public let slate100 = Color(red: 0.941, green: 0.953, blue: 0.969)
+  public let slate200 = Color(red: 0.886, green: 0.906, blue: 0.941)
+  public let slate300 = Color(red: 0.800, green: 0.835, blue: 0.886)
+  public let slate400 = Color(red: 0.698, green: 0.753, blue: 0.824)
+  public let slate500 = Color(red: 0.580, green: 0.663, blue: 0.722)
+  public let slate600 = Color(red: 0.486, green: 0.549, blue: 0.620)
+  public let slate700 = Color(red: 0.400, green: 0.463, blue: 0.545)
+  public let slate800 = Color(red: 0.275, green: 0.329, blue: 0.408)
+  public let slate900 = Color(red: 0.204, green: 0.247, blue: 0.314)
+  public let slate950 = Color(red: 0.118, green: 0.165, blue: 0.220)
+  public let slate990 = Color(red: 0.086, green: 0.094, blue: 0.133)
+
+  // MARK: - Stone Colors
+  public let stone50 = Color(red: 0.980, green: 0.980, blue: 0.976)
+  public let stone100 = Color(red: 0.953, green: 0.953, blue: 0.945)
+  public let stone200 = Color(red: 0.898, green: 0.898, blue: 0.886)
+  public let stone300 = Color(red: 0.835, green: 0.835, blue: 0.816)
+  public let stone400 = Color(red: 0.631, green: 0.631, blue: 0.604)
+  public let stone500 = Color(red: 0.471, green: 0.471, blue: 0.447)
+  public let stone600 = Color(red: 0.325, green: 0.325, blue: 0.306)
+  public let stone700 = Color(red: 0.251, green: 0.251, blue: 0.235)
+  public let stone800 = Color(red: 0.157, green: 0.157, blue: 0.145)
+  public let stone900 = Color(red: 0.075, green: 0.075, blue: 0.067)
+  public let stone950 = Color(red: 0.027, green: 0.027, blue: 0.024)
+
+  // MARK: - Legacy Colors (for backward compatibility)
+  public let grayscaleWhite = Color.white
+  public let grayscaleBlack = Color.black
+
+  // Explicit Grayscale Color Palette
+  public let grayscaleGray50 = Color(red: 0.980, green: 0.980, blue: 0.980)
+  public let grayscaleGray100 = Color(red: 0.953, green: 0.953, blue: 0.953)
+  public let grayscaleGray200 = Color(red: 0.898, green: 0.898, blue: 0.898)
+  public let grayscaleGray300 = Color(red: 0.831, green: 0.831, blue: 0.831)
+  public let grayscaleGray400 = Color(red: 0.631, green: 0.631, blue: 0.631)
+  public let grayscaleGray500 = Color(red: 0.471, green: 0.471, blue: 0.471)
+  public let grayscaleGray600 = Color(red: 0.325, green: 0.325, blue: 0.325)
+  public let grayscaleGray700 = Color(red: 0.247, green: 0.247, blue: 0.247)
+  public let grayscaleGray800 = Color(red: 0.153, green: 0.153, blue: 0.153)
+  public let grayscaleGray900 = Color(red: 0.071, green: 0.071, blue: 0.071)
+
+  // Legacy Semantic Colors (Mapping to the new palette)
+  public let primary400 = Color(red: 0.376, green: 0.549, blue: 0.949)
+  public let primary500 = Color(red: 0.235, green: 0.427, blue: 0.918)
+  public let primary500Dark = Color(red: 0.075, green: 0.075, blue: 0.067) // Stone 900 approximation based on context
+  public let secondary400 = Color(red: 0.376, green: 0.890, blue: 0.455)
+  public let secondary500 = Color(red: 0.220, green: 0.804, blue: 0.310)
+  public let error400 = Color(red: 0.973, green: 0.396, blue: 0.396)
+  public let error500 = Color(red: 0.937, green: 0.267, blue: 0.267)
+  public let warning400 = Color(red: 0.984, green: 0.753, blue: 0.212)
+  public let warning500 = Color(red: 0.961, green: 0.671, blue: 0.118)
+  public let success400 = Color(red: 0.376, green: 0.890, blue: 0.455)
+  public let success500 = Color(red: 0.220, green: 0.804, blue: 0.310)
+
+  public init() {}
+}
