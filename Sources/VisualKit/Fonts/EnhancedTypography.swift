@@ -1,10 +1,3 @@
-//
-//  EnhancedTypography.swift
-//  VisualKit
-//
-//  Created by Soubhagya on 31/10/25.
-//
-
 import SwiftUI
 
 // MARK: - Font Family Wrapper Structs

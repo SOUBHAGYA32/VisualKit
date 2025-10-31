@@ -1,26 +1,15 @@
-//
-//  SmartFontProvider.swift
-//  VisualKit
-//
-//  Created by Soubhagya on 31/10/25.
-//
-
 import SwiftUI
 
 // MARK: - Smart Font Provider
 public struct SmartFontProvider: Sendable {
-  private let selectedFontFamily: AvailableFontFamily // AvailableFontFamily is likely an enum defined elsewhere
-
+  private let selectedFontFamily: AvailableFontFamily
+  
   public init(preferredFontFamily: AvailableFontFamily = .roboto) {
-    // Check if preferred font family is available, fallback to system if not
     if FontAvailabilityChecker.checkFontAvailability(for: preferredFontFamily) {
       self.selectedFontFamily = preferredFontFamily
     } else {
       self.selectedFontFamily = FontAvailabilityChecker.getPrimaryAvailableFontFamily()
-      print("⚠️ TestPackage: \(preferredFontFamily.displayName) fonts not found. Using \(selectedFontFamily.displayName) fonts instead.")
     }
-
-    print("✅ TestPackage: Using \(selectedFontFamily.displayName) font family")
   }
 
   // MARK: - Font Creation Methods
@@ -58,7 +47,7 @@ public struct SmartFontProvider: Sendable {
     case .openSans:
       return createOpenSansFont(weight: weight, size: size)
     case .system:
-      return Font.system(size: size, weight: weight.systemWeight) // systemWeight is likely an extension on FontWeight
+      return Font.system(size: size, weight: weight.systemWeight)
     }
   }
 

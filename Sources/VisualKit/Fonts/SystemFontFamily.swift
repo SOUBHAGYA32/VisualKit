@@ -1,9 +1,3 @@
-//
-//  SystemFontFamily.swift
-//  VisualKit
-//
-//  Created by Soubhagya on 31/10/25.
-//
 import SwiftUI
 
 // MARK: - System Font Family (Default Fallback)

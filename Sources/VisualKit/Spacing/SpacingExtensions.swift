@@ -1,10 +1,3 @@
-//
-//  SpacingExtensions.swift
-//  VisualKit
-//
-//  Created by Soubhagya on 31/10/25.
-//
-
 import SwiftUI
 
 //MARK: - View Extensions for Easy Spacing Application

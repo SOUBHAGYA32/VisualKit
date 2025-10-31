@@ -1,10 +1,3 @@
-//
-//  Colors.swift
-//  VisualKit
-//
-//  Created by Soubhagya on 30/10/25.
-//
-
 import SwiftUI
 
 // MARK: - Color Tokens
