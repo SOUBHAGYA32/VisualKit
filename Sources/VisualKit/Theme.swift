@@ -8,6 +8,8 @@ public protocol ThemeProviding{
   var spacing: Spacing { get }
   var sizes: ComponentSizes {get}
   var layoutSizes: LayoutSizes { get }
+  var icons: IconManager { get }
+  var appearance: AppearanceManager { get }
 }
 
 public struct DesignSystemTheme: ThemeProviding, Sendable {
@@ -17,6 +19,8 @@ public struct DesignSystemTheme: ThemeProviding, Sendable {
   public let spacing: Spacing
   public let sizes: ComponentSizes
   public let layoutSizes: LayoutSizes
+  public let icons: IconManager
+  public let appearance: AppearanceManager
 
   public init(preferredFontFamily: AvailableFontFamily = .roboto) {
     self.fonts = Typography()
@@ -25,6 +29,8 @@ public struct DesignSystemTheme: ThemeProviding, Sendable {
     self.spacing = Spacing()
     self.sizes = ComponentSizes()
     self.layoutSizes = LayoutSizes()
+    self.icons = IconManager()
+    self.appearance = AppearanceManager()
   }
 
   // Convenience initializers for specific font families
