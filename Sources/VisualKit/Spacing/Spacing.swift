@@ -66,6 +66,28 @@ public struct Spacing: Sendable {
   public let cornerRadiusXL3: CGFloat = 24
   public let cornerRadiusFull: CGFloat = 9999
 
+  //Points Spacing
+  public let pt2: CGFloat = SpacingTokens.pt2
+  public let pt4: CGFloat = SpacingTokens.pt4
+  public let pt6: CGFloat = SpacingTokens.pt6
+  public let pt8: CGFloat = SpacingTokens.pt8
+  public let pt10: CGFloat = SpacingTokens.pt10
+  public let pt12: CGFloat = SpacingTokens.pt12
+  public let pt14: CGFloat = SpacingTokens.pt14
+  public let pt16: CGFloat = SpacingTokens.pt16
+  public let pt20: CGFloat = SpacingTokens.pt20
+  public let pt24: CGFloat = SpacingTokens.pt24
+  public let pt28: CGFloat = SpacingTokens.pt28
+  public let pt32: CGFloat = SpacingTokens.pt32
+  public let pt40: CGFloat = SpacingTokens.pt40
+  public let pt48: CGFloat = SpacingTokens.pt48
+  public let pt56: CGFloat = SpacingTokens.pt56
+  public let pt64: CGFloat = SpacingTokens.pt64
+  public let pt80: CGFloat = SpacingTokens.pt80
+  public let pt96: CGFloat = SpacingTokens.pt96
+  public let pt112: CGFloat = SpacingTokens.pt112
+  public let pt128: CGFloat = SpacingTokens.pt128
+
   public init() {}
 }
 
