@@ -24,6 +24,11 @@ public struct SizeTokens {
   public static let xl15: CGFloat = 384
 
   // MARK: - Point-based Sizes (pt16, pt20, pt24, ...)
+  public static let pt0: CGFloat = 0
+  public static let pt1: CGFloat = 1
+  public static let pt2: CGFloat = 2
+  public static let pt4: CGFloat = 4
+  public static let pt6: CGFloat = 6
   public static let pt8: CGFloat = 8
   public static let pt10: CGFloat = 10
   public static let pt12: CGFloat = 12

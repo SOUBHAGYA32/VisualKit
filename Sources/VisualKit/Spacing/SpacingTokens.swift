@@ -21,6 +21,8 @@ public struct SpacingTokens: Sendable {
   public static let x112: CGFloat = 128
 
   // MARK: - Point-based Spacing (pt2, pt4, pt8, ...)
+  public static let pt0: CGFloat = 0
+  public static let pt1: CGFloat = 1
   public static let pt2: CGFloat = 2
   public static let pt4: CGFloat = 4
   public static let pt6: CGFloat = 6
