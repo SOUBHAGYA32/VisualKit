@@ -61,6 +61,11 @@ public struct ComponentSizes: Sendable {
   public let dividerThick: CGFloat = 4
 
   // MARK: - Points Sizes
+  public let pt0: CGFloat = SizeTokens.pt0
+  public let pt1: CGFloat = SizeTokens.pt1
+  public let pt2: CGFloat = SizeTokens.pt2
+  public let pt4: CGFloat = SizeTokens.pt4
+  public let pt6: CGFloat = SizeTokens.pt6
   public let pt8: CGFloat = SizeTokens.pt8
   public let pt10: CGFloat = SizeTokens.pt10
   public let pt12: CGFloat = SizeTokens.pt12
