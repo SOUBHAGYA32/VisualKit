@@ -1,5 +1,9 @@
 import SwiftUI
 
+#if canImport(UIKit)
+import UIKit
+#endif
+
 // MARK: - Adaptive Color that responds to ColorScheme
 public struct AdaptiveColor {
   private let lightColor: Color
@@ -15,6 +19,41 @@ public struct AdaptiveColor {
     colorScheme == .dark ? darkColor : lightColor
   }
 }
+
+// MARK: - UIKit Adaptive Color
+#if canImport(UIKit)
+public struct AdaptiveUIColor {
+  private let lightColor: Color
+  private let darkColor: Color
+
+  public init(light: Color, dark: Color) {
+    self.lightColor = light
+    self.darkColor = dark
+  }
+
+  /// Get UIColor that automatically adapts to light/dark mode
+  public var uiColor: UIColor {
+    return UIColor { traitCollection in
+      switch traitCollection.userInterfaceStyle {
+      case .dark:
+        return UIColor(self.darkColor)
+      default:
+        return UIColor(self.lightColor)
+      }
+    }
+  }
+
+  /// Get UIColor for specific interface style
+  public func uiColor(for style: UIUserInterfaceStyle) -> UIColor {
+    switch style {
+    case .dark:
+      return UIColor(darkColor)
+    default:
+      return UIColor(lightColor)
+    }
+  }
+}
+#endif
 
 // MARK: - Make AdaptiveColor work as a Color
 extension AdaptiveColor: View {
@@ -51,7 +90,7 @@ private struct EnvironmentColorReader: View {
 // MARK: - Hex Color Initializer
 public extension Color {
   init(hex: String) {
-    var hexFormatted = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
+    let hexFormatted = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
     var int: UInt64 = 0
     Scanner(string: hexFormatted).scanHexInt64(&int)
     let a, r, g, b: UInt64

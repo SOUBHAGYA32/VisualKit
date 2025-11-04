@@ -1,5 +1,9 @@
 import SwiftUI
 
+#if canImport(UIKit)
+import UIKit
+#endif
+
 //MARK: - Theme Colors
 public struct ThemeColors: Sendable {
 
@@ -21,6 +25,19 @@ public struct ThemeColors: Sendable {
       return lightColor
     }
   }
+
+  // MARK: - UIKit Color Access Helper
+  #if canImport(UIKit)
+  public func color(
+    light lightKeyPath: KeyPath<ColorTokens, Color>,
+    dark darkKeyPath: KeyPath<ColorTokens, Color>
+  ) -> AdaptiveUIColor {
+    let lightColor = tokens[keyPath: lightKeyPath]
+    let darkColor = tokens[keyPath: darkKeyPath]
+    
+    return AdaptiveUIColor(light: lightColor, dark: darkColor)
+  }
+  #endif
 
   // MARK: - Semantic Colors (Light Theme)
   public var lightBackground: Color { tokens.grayscaleWhite }
